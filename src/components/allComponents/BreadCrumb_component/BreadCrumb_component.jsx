@@ -4,12 +4,12 @@ import React from 'react'
 const BreadCrumb_component = () => {
   return (
     <div>
-      <Grid>
-        <Column lg={16} md={8} sm={4}>
+      
+        
           <h5>Bread crumb</h5>
-        </Column>
+       
 
-        <Column lg={16} md={8} sm={4}>
+        
           <Breadcrumb>
             <BreadcrumbItem>
               <a href="/#">Breadcrumb 1</a>
@@ -18,14 +18,14 @@ const BreadCrumb_component = () => {
             <BreadcrumbItem href="#">Breadcrumb 3</BreadcrumbItem>
             <BreadcrumbItem>Breadcrumb 4</BreadcrumbItem>
           </Breadcrumb>
-        </Column>
+       
         <br></br>
         <br></br>
-        <Column lg={16} md={8} sm={4}>
+        
           Bread crumb with over flow menu
-        </Column>
+       
         <br></br>
-        <Column lg={16} md={8} sm={4}>
+        
           <Breadcrumb>
             <BreadcrumbItem>
               <a href="/#">Breadcrumb 1</a>
@@ -40,15 +40,15 @@ const BreadCrumb_component = () => {
             <BreadcrumbItem href="#">Breadcrumb 5</BreadcrumbItem>
             <BreadcrumbItem>Breadcrumb 6</BreadcrumbItem>
           </Breadcrumb>
-        </Column>
+       
         <br></br>
         <br></br>
-        <Column lg={16} md={8} sm={4}>
+        
           Bread crumb no trailing slash:
-        </Column>
+       
         <br></br>
 
-        <Column lg={16} md={8} sm={4}>
+        
           <Breadcrumb noTrailingSlash>
             <BreadcrumbItem>
               <a href="/#">Breadcrumb 1</a>
@@ -57,8 +57,8 @@ const BreadCrumb_component = () => {
             <BreadcrumbItem href="#">Breadcrumb 3</BreadcrumbItem>
             <BreadcrumbItem>Breadcrumb 4</BreadcrumbItem>
           </Breadcrumb>
-        </Column>
-      </Grid>
+       
+      
     </div>
   );
 }

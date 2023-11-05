@@ -3,22 +3,19 @@ import React from 'react'
 import {CodeSnippet} from '@carbon/react'
 const CodeSnippet_component = () => {
   return (
-    <Grid>
-      <Column lg={16} md={8} sm={4}>
-        <h5>Code Snippets</h5>
-      </Column>
-      <Column lg={16} md={8} sm={4}>
-        inline:
-        <br></br> <br></br>
-        <CodeSnippet type="inline" feedback="Copied to clipboard">
-          {"node -v"}
-        </CodeSnippet>
-        <br></br> <br></br>
-        <br></br>
-        multi:
-        <br></br> <br></br>
-        <CodeSnippet type="multi" feedback="Copied to clipboard">
-          {`  "scripts": {
+    <>
+      <h5>Code Snippets</h5>
+      inline:
+      <br></br> <br></br>
+      <CodeSnippet type="inline" feedback="Copied to clipboard">
+        {"node -v"}
+      </CodeSnippet>
+      <br></br> <br></br>
+      <br></br>
+      multi:
+      <br></br> <br></br>
+      <CodeSnippet type="multi" feedback="Copied to clipboard">
+        {`  "scripts": {
       "build": "lerna run build --stream --prefix --npm-client yarn",
       "ci-check": "carbon-cli ci-check",
       "clean": "lerna run clean && lerna clean --yes && rimraf node_modules",
@@ -47,17 +44,16 @@ const CodeSnippet_component = () => {
         "@babel/preset-react": "^7.10.0",
         "@babel/runtime": "^7.10.0",
         "@commitlint/cli": "^8.3.5",`}
-        </CodeSnippet>
-        <br></br> <br></br>
-        Single Line:
-        <br></br>
-        <br></br>
-        <CodeSnippet type="single" feedback="Copied to clipboard">
-          yarn add carbon-components@latest carbon-components-react@latest
-          @carbon/icons-react@latest carbon-icons@latest
-        </CodeSnippet>
-      </Column>
-    </Grid>
+      </CodeSnippet>
+      <br></br> <br></br>
+      Single Line:
+      <br></br>
+      <br></br>
+      <CodeSnippet type="single" feedback="Copied to clipboard">
+        yarn add carbon-components@latest carbon-components-react@latest
+        @carbon/icons-react@latest carbon-icons@latest
+      </CodeSnippet>
+    </>
   );
 }
 

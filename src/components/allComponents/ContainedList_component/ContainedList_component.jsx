@@ -17,8 +17,9 @@ const ContainedList_component = () => {
       />
     );
   return (
-    <Grid>
-      <Column lg={16} md={8} sm={4}>
+    <>
+   
+      
         <h5>Contained List</h5>
         <ContainedList label="List title" kind="on-page">
           <ContainedListItem>List item</ContainedListItem>
@@ -51,8 +52,7 @@ const ContainedList_component = () => {
           <ContainedListItem action={itemAction}>List item</ContainedListItem>
           <ContainedListItem action={itemAction}>List item</ContainedListItem>
         </ContainedList>
-      </Column>
-    </Grid>
+         </>
   );
 }
 

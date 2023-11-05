@@ -30,25 +30,23 @@ const ComboBoxes = () => {
       },
     ];
   return (
-    <Grid>
-      <Column lg={16} md={8} sm={4}>
-        <h5>Combo box</h5>
-        <div
-          style={{
-            width: 400,
-          }}
-        >
-          <ComboBox
-            // onChange={() => {}}
-            id="carbon-combobox"
-            items={items}
-            itemToString={(item) => (item ? item.text : "")}
-            titleText="ComboBox title"
-            helperText="Combobox helper text"
-          />
-        </div>
-      </Column>
-    </Grid>
+    <>
+      <h5>Combo box</h5>
+      <div
+        style={{
+          width: 400,
+        }}
+      >
+        <ComboBox
+          // onChange={() => {}}
+          id="carbon-combobox"
+          items={items}
+          itemToString={(item) => (item ? item.text : "")}
+          titleText="ComboBox title"
+          helperText="Combobox helper text"
+        />
+      </div>
+    </>
   );
 }
 

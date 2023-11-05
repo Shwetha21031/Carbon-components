@@ -4,11 +4,9 @@ import React from 'react'
 const Checkboxes = () => {
   return (
     <>
-      <Grid>
-        <Column lg={16} md={8} sm={4}>
           <h5>Checkboxes</h5>
-        </Column>
-        <Column lg={16} md={8} sm={4}>
+        
+       
           <Checkbox
             labelText={`Checkbox label 1`}
             id="checkbox-label-1"
@@ -42,8 +40,7 @@ const Checkboxes = () => {
             readOnly
             labelText={`Checkbox label 6 - Read only`}
           />
-        </Column>
-      </Grid>
+        
     </>
   );
 }
